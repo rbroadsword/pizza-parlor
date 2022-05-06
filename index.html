@@ -12,61 +12,73 @@
 </head>
 <body>
   <div class="container">
-  <div class="header">
-    <h1>PIZZA TITLE</h1>
-  </div>
+    <div class="header">
+      <h1>PIZZA TITLE</h1>
+    </div>
 
-  <!-- Order Form -->
-  <div class="order">
-    <form id="pizza">
-      <div class="form-group">
-        <label for="firstName">First Name:</label>
-        <input id="firstName" type="text" required>
+    <!-- Order Form -->
+    <div class="order">
+      <form id="pizza">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input id="firstName" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input id="lastName" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="adress">Address:</label>
+          <input id="address" type="text" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input id="phone" type="text" required>
+        </div>
+        <div class="form-group">
+          <label>Size:</label>
+          <select name="size" id="size">
+            <option value="small">Small -> $10</option>
+            <option value="medium">Medium -> $15</option>
+            <option value="large">Large -> $20</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Crust:</label>
+          <select name="crust" id="crust">
+            <option value="Thin">Thin</option>
+            <option value="Regular">Regular</option>
+            <option value="Stuffed">Stuffed</option>
+            <option value="Cauliflower">Cauliflower</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Toppings:</label>
+          <input type="checkbox" id="peppers" name="topping" value="peppers">
+          <label for="peppers">Peppers</label>
+          <input type="checkbox" id="onions" name="topping" value="onions">
+          <label for="onions">Onions</label>
+          <input type="checkbox" id="olives" name="topping" value="olives">
+          <label for="olives">Olives</label>
+          <input type="checkbox" id="tomato" name="topping" value="tomato">
+          <label for="tomato">Tomatoes</label>
+          <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+          <label for="pineapple">Pineapple</label>
+        </div>
+        <button type="submit" class="btn-success">Submit</button>
+      </form>
+    </div>
+    <div class="displayOrder">
+      <div class="deliver">
+        <h2>Your order is on the way <span class="firstName"></span>!</h2>
+        <ul>
+          <li>Size: <span class="display-size"></span></li>
+          <li>Crust: <span class="display-crust"></span></li>
+          <li>Toppings: <span class="display-toppings"></span></li>
+          <li>Total: <span class="display-total"></span></li>
+        </ul>
       </div>
-      <div class="form-group">
-        <label for="lastName">Last Name:</label>
-        <input id="lastName" type="text" required>
-      </div>
-      <div class="form-group">
-        <label for="adress">Address:</label>
-        <input id="address" type="text" required>
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone Number:</label>
-        <input id="phone" type="text" required>
-      </div>
-      <div class="form-group">
-        <label>Size:</label>
-        <select name="size" id="size">
-          <option value="small">Small -> $10</option>
-          <option value="medium">Medium -> $15</option>
-          <option value="large">Large -> $20</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Crust:</label>
-        <select name="crust" id="crust">
-          <option value="Thin">Thin</option>
-          <option value="Regular">Regular</option>
-          <option value="Stuffed">Stuffed</option>
-          <option value="Cauliflower">Cauliflower</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Toppings:</label>
-        <input type="checkbox" id="peppers" name="topping" value="peppers">
-        <label for="peppers">Peppers</label>
-        <input type="checkbox" id="onions" name="topping" value="onions">
-        <label for="onions">Onions</label>
-        <input type="checkbox" id="olives" name="topping" value="olives">
-        <label for="olives">Olives</label>
-        <input type="checkbox" id="tomato" name="topping" value="tomato">
-        <label for="tomato">Tomatoes</label>
-        <input type="checkbox" id="pineapple" name="topping" value="pineapple">
-        <label for="pineapple">Pineapple</label>
-      </div>
-    </form>
-  </div>
+    </div>
   </div>
 </body>
 </html>
