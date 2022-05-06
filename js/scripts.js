@@ -23,6 +23,15 @@ Pizza.prototype.price = function() {
 }
 
 //UI 
+function toppingDisplay(pizza) {
+  let toppingList = pizza.toppings[0]; 
+
+  for(let i=1; i<pizza.toppings.length; i++){
+    toppingList += " + " + pizza.toppings[i];
+  }
+  return toppingList;  
+}
+toppingDisplay(); 
 $(document).ready(function() {
   $("form#pizza").submit(function(event) {
     event.preventDefault(); 
