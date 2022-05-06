@@ -21,3 +21,18 @@ Pizza.prototype.price = function() {
   numberOfToppings +=  parseInt(this.toppings.length); 
   this.total += numberOfToppings * 1; 
 }
+
+//UI 
+$(document).ready(function() {
+  $("form#pizza").submit(function(event) {
+    event.preventDefault(); 
+  const firstName = $("#firstName").val(); 
+  const lastName = $("#lastName").val(); 
+  const fullName = firstName + " " + lastName; 
+  const toppings = []; 
+  $("input:checkbox[name='topping']:checked").each(function() {
+    toppings.push($(this).val());
+  });
+  console.log(toppings);
+  });
+})
