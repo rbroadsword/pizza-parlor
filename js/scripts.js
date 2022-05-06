@@ -10,11 +10,11 @@ function Pizza(size, crust, toppings) {
 Pizza.prototype.price = function() { 
   let numberOfToppings = 0; 
 
-  if (this.size === "large") {
+  if (this.size === "Large") {
     this.total += 20; 
-  } else if (this.size === "medium") {
+  } else if (this.size === "Medium") {
     this.total += 15; 
-  }else if (this.size === "small") {
+  }else if (this.size === "Small") {
     this.total += 10; 
   } 
    
@@ -29,7 +29,11 @@ $(document).ready(function() {
   const firstName = $("#firstName").val(); 
   const lastName = $("#lastName").val(); 
   const fullName = firstName + " " + lastName;
-  const address = $("#address").val(); 
+  const street = $("#street").val(); 
+  const city = $("#city").val();
+  const zip = $("#zip").val();
+  const address = street + " " + city + " " + zip; 
+  console.log(address); 
   const phoneNumber = $("#phone").val(); 
   const size = $("#size").val();  
   const crust = $("#crust").val(); 
