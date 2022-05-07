@@ -19,61 +19,69 @@
     <!-- Order Form -->
     <div class="order">
       <form id="pizza">
-        <div class="form-group">
-          <label for="firstName">First Name:</label>
-          <input id="firstName" type="text" required>
+        <h2>Your Details</h2>
+        <div class="row">
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input id="firstName" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="street">Street:</label>
+            <input id="street" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="city">City:</label>
+            <input id="city" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip Code:</label>
+            <input id="zip" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input id="phone" type="text" required>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="lastName">Last Name:</label>
-          <input id="lastName" type="text" required>
+        <h2>Your Pie</h2>
+        <div class="pizza-info row">
+          <div class="form-group">
+            <label>Size:</label>
+            <select name="size" id="size">
+              <option value="Small">Small -> $10</option>
+              <option value="Medium">Medium -> $15</option>
+              <option value="Large">Large -> $20</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Crust:</label>
+            <select name="crust" id="crust">
+              <option value="Thin">Thin</option>
+              <option value="Regular">Regular</option>
+              <option value="Stuffed">Stuffed</option>
+              <option value="Cauliflower">Cauliflower</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Toppings -> 1$ each:</label>
+            <input type="checkbox" id="peppers" name="topping" value="peppers">
+            <label for="peppers">Peppers</label>
+            <input type="checkbox" id="onions" name="topping" value="onions">
+            <label for="onions">Onions</label>
+            <input type="checkbox" id="olives" name="topping" value="olives">
+            <label for="olives">Olives</label>
+            <input type="checkbox" id="tomato" name="topping" value="tomato">
+            <label for="tomato">Tomatoes</label>
+            <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+            <label for="pineapple">Pineapple</label>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="street">Street:</label>
-          <input id="street" type="text" required>
+        <div class="text-center">
+        <button type="submit" class="btn-lg btn-outline-dark">Submit Order</button>
         </div>
-        <div class="form-group">
-          <label for="city">City:</label>
-          <input id="city" type="text" required>
-        </div>
-        <div class="form-group">
-          <label for="zip">Zip Code:</label>
-          <input id="zip" type="text" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone Number:</label>
-          <input id="phone" type="text" required>
-        </div>
-        <div class="form-group">
-          <label>Size:</label>
-          <select name="size" id="size">
-            <option value="Small">Small -> $10</option>
-            <option value="Medium">Medium -> $15</option>
-            <option value="Large">Large -> $20</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Crust:</label>
-          <select name="crust" id="crust">
-            <option value="Thin">Thin</option>
-            <option value="Regular">Regular</option>
-            <option value="Stuffed">Stuffed</option>
-            <option value="Cauliflower">Cauliflower</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Toppings -> 1$ each:</label>
-          <input type="checkbox" id="peppers" name="topping" value="peppers">
-          <label for="peppers">Peppers</label>
-          <input type="checkbox" id="onions" name="topping" value="onions">
-          <label for="onions">Onions</label>
-          <input type="checkbox" id="olives" name="topping" value="olives">
-          <label for="olives">Olives</label>
-          <input type="checkbox" id="tomato" name="topping" value="tomato">
-          <label for="tomato">Tomatoes</label>
-          <input type="checkbox" id="pineapple" name="topping" value="pineapple">
-          <label for="pineapple">Pineapple</label>
-        </div>
-        <button type="submit" class="btn-success">Submit</button>
       </form>
     </div>
     <div class="displayOrder">
