@@ -53,8 +53,17 @@ $(document).ready(function() {
   $(".fullName").text(fullName); 
   $(".display-size").text(size); 
   $(".display-crust").text(crust); 
-  $(".display-toppings").text(toppings); 
+  $(".display-toppings").text(toppings.join(" , ")); 
   $(".display-total").text(cost + "$"); 
   console.log(myOrder);
   });
+
+  $("#back").click(function(event) {
+    event.preventDefault(); 
+    $(".order").show(); 
+  $(".hide-order").hide();
+  $("#pizza").each(function(){
+     this.reset();
+   });
+  })
 })

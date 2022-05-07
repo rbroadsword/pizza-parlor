@@ -7,7 +7,9 @@ body {
   min-height: 30vh;
   background-color: black;
   color: beige;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 2rem;
   border-bottom: white solid 1rem;
 }
@@ -61,4 +63,7 @@ ul {
 }
 .hide-order {
   display: none;
+}
+footer {
+  min-height: 5vh;
 }
