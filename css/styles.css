@@ -1,6 +1,7 @@
 body {
   background-color: black;
   display: flex;
+  font-family: 'Alfa Slab One', cursive;
 }
 .header {
   min-height: 30vh;
@@ -25,7 +26,7 @@ form {
   background-color: #ffffff;
   opacity: 0.6;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0.5rem;
 }
 label, input {
@@ -39,11 +40,25 @@ label, input {
   margin-left: 2rem;
   padding: 0.5rem;
 }
-#video {
-  max-height: 100%;
-  max-width: 100%;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+.displayOrder {
+  padding: 2rem;
+  background-image: url("../img/pizza.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+}
+.deliver {
+  background-color: #ffffff;
+  opacity: 0.6;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+.hide-order {
+  display: none;
 }

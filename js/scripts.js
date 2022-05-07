@@ -23,18 +23,11 @@ Pizza.prototype.price = function() {
 }
 
 //UI 
-function toppingDisplay(pizza) {
-  let toppingList = pizza.toppings[0]; 
-
-  for(let i=1; i<pizza.toppings.length; i++){
-    toppingList += " + " + pizza.toppings[i];
-  }
-  return toppingList;  
-}
-toppingDisplay(); 
 $(document).ready(function() {
   $("form#pizza").submit(function(event) {
     event.preventDefault(); 
+  $(".order").hide(); 
+  $(".hide-order").show(); 
   const firstName = $("#firstName").val(); 
   const lastName = $("#lastName").val(); 
   const fullName = firstName + " " + lastName;
@@ -61,7 +54,7 @@ $(document).ready(function() {
   $(".display-size").text(size); 
   $(".display-crust").text(crust); 
   $(".display-toppings").text(toppings); 
-  $(".display-total").text(cost); 
+  $(".display-total").text(cost + "$"); 
   console.log(myOrder);
   });
 })
