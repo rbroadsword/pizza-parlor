@@ -20,7 +20,7 @@
     <div class="order">
       <form id="pizza">
         <h2>Your Details</h2>
-        <div class="row">
+        <div class="row customer-details">
           <div class="form-group">
             <label for="firstName">First Name:</label>
             <input id="firstName" type="text" required>
@@ -47,7 +47,8 @@
           </div>
         </div>
         <h2>Your Pie</h2>
-        <div class="pizza-info row">
+        <div class="pizza-info">
+          <div class="row">
           <div class="form-group">
             <label>Size:</label>
             <select name="size" id="size">
@@ -65,18 +66,31 @@
               <option value="Cauliflower">Cauliflower</option>
             </select>
           </div>
+        </div>
           <div class="form-group">
-            <label>Toppings -> 1$ each:</label>
-            <input type="checkbox" id="peppers" name="topping" value="peppers">
-            <label for="peppers">Peppers</label>
-            <input type="checkbox" id="onions" name="topping" value="onions">
-            <label for="onions">Onions</label>
-            <input type="checkbox" id="olives" name="topping" value="olives">
-            <label for="olives">Olives</label>
-            <input type="checkbox" id="tomato" name="topping" value="tomato">
-            <label for="tomato">Tomatoes</label>
-            <input type="checkbox" id="pineapple" name="topping" value="pineapple">
-            <label for="pineapple">Pineapple</label>
+            <div class="row">
+              <label>Toppings -> 1$ each:</label>
+            </div>
+            <div class="tops1">
+              <input type="checkbox" id="peppers" name="topping" value="peppers">
+              <label for="peppers">Peppers</label>
+              <input type="checkbox" id="onions" name="topping" value="onions">
+              <label for="onions">Onions</label>
+              <input type="checkbox" id="olives" name="topping" value="olives">
+              <label for="olives">Olives</label>
+              <input type="checkbox" id="tomato" name="topping" value="tomato">
+              <label for="tomato">Tomatoes</label>
+            </div>
+              <div class="tops2">
+              <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+              <label for="pineapple">Pineapple</label>
+              <input type="checkbox" id="basil" name="topping" value="basil">
+              <label for="basil">Basil</label>
+              <input type="checkbox" id="artichoke" name="topping" value="artichoke">
+              <label for="artichoke">Artichoke</label>
+              <input type="checkbox" id="rocket" name="topping" value="rocket">
+              <label for="rocket">Rocket</label>
+            </div>
           </div>
         </div>
         <div class="text-center">

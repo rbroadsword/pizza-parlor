@@ -21,10 +21,23 @@ body {
   color: black;
   display: flex;
 }
-
-.order label {
-  padding: .2rem; 
-  margin: 1rem;
+form {
+  background-color: #ffffff;
+  opacity: 0.6;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+label, input {
+  padding: 0.5rem;
+}
+.customer-details {
+  margin-left: 2rem;
+  padding: 0.5rem;
+}
+.pizza-info {
+  margin-left: 2rem;
+  padding: 0.5rem;
 }
 #video {
   max-height: 100%;
